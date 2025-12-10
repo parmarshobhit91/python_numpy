@@ -13,41 +13,52 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 result = a * b
-print("Element-wise multiplication:", result)
+# print("Element-wise multiplication:", result)
 
 # Sum of two arrays
 sum_result = a + b
-print("Element-wise sum:", sum_result)
+# print("Element-wise sum:", sum_result)
 
 # Difference of two arrays
 diff_result = b - a
-print("Element-wise difference:", diff_result)
+# print("Element-wise difference:", diff_result)
 
 # Division of two arrays
 div_result = b / a
-print("Element-wise division:", div_result)
+# print("Element-wise division:", div_result)
 
 # Shape of an array
 shape = a.shape
-print("Shape of a:", shape)
-print("Shape of arr2:", arr2.shape)
+# print("Shape of a:", shape)
+# print("Shape of arr2:", arr2.shape)
 
 
 # Dimensions of an array
-dimensions = a.ndim
-print("Dimensions of arr3:", dimensions)
-dimensions_arr2 = arr2.ndim
-print("Dimensions of arr2:", dimensions_arr2)
+# dimensions = a.ndim
+# print("Dimensions of arr3:", dimensions)
+# dimensions_arr2 = arr2.ndim
+# print("Dimensions of arr2:", dimensions_arr2)
 
 # Size of an array
 size = a.size
-print("Size of arr:", size)
-print("Size of arr2:", arr2.size)
+# print("Size of arr:", size)
+# print("Size of arr2:", arr2.size)
 
 zeros_arr = np.zeros((1,3), dtype=int)
-print("New array of zeros:", zeros_arr)
-print("Data type of zeros_arr:", zeros_arr.dtype)
+# print("New array of zeros:", zeros_arr)
+# print("Data type of zeros_arr:", zeros_arr.dtype)
 
 ones_arr = np.ones((2,2))
-print("New array of ones:\n", ones_arr)
+# print("New array of ones:\n", ones_arr)
 
+# Slicing
+slicing_arr = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90])
+print("Sliced array:", slicing_arr[2:7:2])
+print("Sliced array:", slicing_arr[-9:-1])
+print("Sliced array:", slicing_arr[-1:-9:-1])
+print("Sliced array:", slicing_arr[::-1])
+print("Sliced array:", slicing_arr[2:7:2])
+
+sliced_arr = arr2[0:2, 1:3]
+# print("Sliced arr2:\n", sliced_arr)
+# slicing using axis 

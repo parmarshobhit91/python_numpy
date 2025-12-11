@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 
-#paragraph {
+.paragraph {
   color: white;
   background-color: burlywood;
   letter-spacing: 5px;
@@ -22,4 +22,43 @@ body {
   margin: 30px;
   text-decoration: underline;
   letter-spacing: 4px;
+}
+
+p::before {
+  content: "** ";
+}
+
+p::after {
+  content: " **";
+  color: black;
+}
+p::selection {
+  background-color: blue;
+  color: red;
+}
+/* p::first-line {
+  color: blueviolet;
+} */
+h1::first-letter {
+  color: black;
+}
+
+button {
+  font-size: larger;
+}
+
+button:hover {
+  background-color: yellow;
+  color: blue;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: red;
+  color: white;
+}
+
+p:nth-of-type(2n) {
+  color: white;
+  background-color: red; /* Add a red background to see if it matches */
 }
